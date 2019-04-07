@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "763219506082",
+    "firebase_url": "https://setupfirebase-5352c.firebaseio.com",
+    "project_id": "setupfirebase-5352c",
+    "storage_bucket": "setupfirebase-5352c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763219506082:android:13435f3fa2a85835",
+        "android_client_info": {
+          "package_name": "com.example.setupfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkYthunNOJPUA_bCWUXYNQpDm6YVARHXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763219506082-fa4a8akqq7t2511k6a019gqt903dmc92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
