@@ -4,57 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup">
+    tools:context=".SignIn">
 
     <EditText
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="email"
         android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="117dp"
+        android:hint="E-Mail"
+        />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@id/button"
+        android:hint="Password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
-
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SignUp"
+        android:text="SignIn"
+        app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        android:onClick="newEntry"
+        android:onClick="Authenticate"
         />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already a user? Click Here to Sign In"
-        app:layout_constraintLeft_toLeftOf="@+id/button"
-        app:layout_constraintRight_toRightOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        android:clickable="true"
-        android:onClick="toSignIn"
-        />
-
-
 </android.support.constraint.ConstraintLayout>

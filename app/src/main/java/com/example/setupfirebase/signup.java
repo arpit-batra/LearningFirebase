@@ -1,5 +1,6 @@
 package com.example.setupfirebase;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,5 +55,10 @@ public class signup extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void toSignIn(View view){
+        Intent intent = new Intent(this,SignIn.class);
+        startActivity(intent);
     }
 }
